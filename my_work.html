@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Work</title>
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="my_work.html">My Work</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <h1>My Work</h1>
+
+      <p class="intro-text">
+        I’ve organized my work into <span class="highlight">Evaluative</span> and <span class="highlight">Exploratory</span> projects to showcase my UX research range. 
+    </p>
+      <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".Exploratory">
+          Exploratory
+        </button>
+        <button type="button" class="control" data-filter=".Evaluative">
+          Evaluative
+        </button>
+      </div>
+
+      <div class="work_gallery">
+        <div class="project mix Evaluative">
+          <img src="img/atlassian.png" alt="The logo of Atlassian, an Australian Technology Company"
+          />
+          <h2>
+            Evaluating the Ease of Use for Atlassian Confluence
+          </h2>
+        </div>
+        <div class="project mix Exploratory">
+          <img src="img/thumbnail.png" alt="The logo of Problem Roulette"
+          /></a>
+          <a href="group_study.html"
+            ><h2>
+              Optimizing Group Study Mode: Driving User Acquisition and
+              Retention in EdTech
+            </h2></a
+          >
+        </div>
+        <div class="project mix Exploratory">
+          <a href="usaspending.html"
+            ><img
+              src="img/usaspending-cover.png"
+              alt="Dollar bills on a laptop"
+          /></a>
+          <a href="usaspending.html"
+            ><h2>
+              Foundational Research to Improve Federal Spending Transparency
+            </h2></a
+          >
+        </div>
+
+        <div class="project mix Evaluative">
+          <img
+            src="img/atlas.png"
+            alt="Logo of Atlas, an edcuation technology product"
+          />
+          <h2>Better Usability for Atlas' Planner</h2>
+        </div>
+      </div>
+
+      <script src="js/mixitup.min.js"></script>
+
+      <script>
+        var containerEl = document.querySelector(".work_gallery");
+
+        var mixer = mixitup(containerEl);
+      </script>
+    </main>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Terry Yuan. All rights reserved.</p>
+  </footer>
+</html>

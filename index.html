@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Terry's Portfolio</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="my_work.html">My Work</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <h1>👋 Hi there, I am Terry.</h1>
+      <div class="overview">
+        <img
+          class="headshot"
+          src="img/headshot copy.png"
+          alt="Terry Yuan smiling"
+        />
+        <!-- bio -->
+        <p>
+          <span class="highlight">I aspire</span> to be a
+          <span class="highlight">UX researcher</span> who
+          <span class="highlight">empowers users.</span>
+        </p>
+      </div>
+
+      <div class="calltoaction">
+        <a href="my_work.html" class="button">My Work</a>
+        <a href="about_me.html" class="button">About Me</a>
+      </div>
+    </main>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Terry Yuan. All rights reserved.</p>
+  </footer>
+</html>
