@@ -69,19 +69,12 @@ button, .calltoaction .button {
     text-decoration: none;
 }
 
-/* Hover State */
+
 button:hover, .calltoaction .button:hover {
     background-color: #333; 
     color: #fff;
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
 }
-
-/* .overview button {
-    margin: 10px 5px; 
-    display: inline-block; 
-} */
-
-
 
 div.controls {
     display: flex;
@@ -118,10 +111,20 @@ div.controls {
 
 
 /* nav */
+html, body, header {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
 nav{
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul{
@@ -304,9 +307,8 @@ nav li.active {
     margin-top: 30px;
 }
 
-.date{
-    font-weight: bold;
-    color: grey;
+h3.date{
+    color: #737373;
     margin: 0px;
     padding: 0;
 }
@@ -389,7 +391,7 @@ nav li.active {
     margin-top: 0.8rem;
 }
 
-.project_content .subtitle{
+.project_content h2.subtitle{
     font-size: 1.2rem;
     font-weight: bold;
     color: grey;
@@ -496,7 +498,7 @@ nav li.active {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .project_content_two_columns .subtitle{
+    .project_content_two_columns h2.subtitle{
         grid-column: 1/span 2;
     }
 
