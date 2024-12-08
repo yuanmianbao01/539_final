@@ -9,7 +9,7 @@ body{
 
 
 body.loaded {
-    opacity: 1; /* Fully visible when loaded */
+    opacity: 1; 
 }
 
 h1 {
@@ -161,7 +161,6 @@ nav li.active {
     text-decoration: underline;
 }
 
-
 /* grid layout - container */
 .container{
     display: grid;
@@ -218,7 +217,7 @@ nav li.active {
 
 .highlight {
     font-weight: bold;
-    color: #007BFF; /* Accent color */
+    color: #0068DE; /* Accent color */
 }
 
 
@@ -289,7 +288,9 @@ nav li.active {
 }
 .box h3{
 	font-size: 19px;
-	padding: 10px 0px 6px;
+	padding: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
 	font-family: helvetica;
 	color: #444;
 }
@@ -302,6 +303,15 @@ nav li.active {
 .row .col:nth-child(2){
     margin-top: 30px;
 }
+
+.date{
+    font-weight: bold;
+    color: grey;
+    margin: 0px;
+    padding: 0;
+}
+
+
 
 /* skillset tags */
 .skills {
@@ -341,6 +351,70 @@ nav li.active {
         margin-top: 6rem; /* Space above the footer */
     }
 
+
+
+/* Project page styling */
+.project_page h1{
+    font-size: 1.8rem;
+}
+
+.overview_small_title{
+    font-weight: bold;
+}
+
+.project_facts_summary{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project_facts_summary div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.project_facts_summary p{
+    margin: 0;
+}
+
+.project_content p, .project_content h2, .project_content h3, .project_content li{
+    text-align: left;
+}
+
+.project_content h3{
+    font-weight: bold;
+}
+
+.project_content li{
+    margin-top: 0.8rem;
+}
+
+.project_content .subtitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.project_content > div {
+    margin: 4rem 0;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.project_content > div.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-navigation a{
+    display: block;
+    margin: 1.5rem 0;
+}
+
+
+
 /* larger screen */
 @media screen and (min-width: 768px) {
     nav ul{
@@ -376,14 +450,11 @@ nav li.active {
     }
     /* mywork  */
     /* mywork gallery */
-    .work_gallery{
+    .work_gallery, .project_content_two_columns, .project-navigation{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-
-
-
 
     .work_gallery .project{
         grid-column: span 1;
@@ -418,21 +489,55 @@ nav li.active {
         padding: 8px 12px; 
     }
 
+
+    /* project page styling */
+    .project_facts_summary{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project_content_two_columns .subtitle{
+        grid-column: 1/span 2;
+    }
+
+    
+
 }
 @media all and (prefers-reduced-motion: reduce) {
+    * {
+        animation: none ;
+        transition: none ;
+    }
+
     body {
         opacity: 1;
+    }
+    .tag {
+        transform: none;
+        box-shadow: none;
     }
 
     .tag:hover {
         transform: none;
-        background-color: #fff;
+        background-color: #fff; 
+        box-shadow: none;
     }
 
 
+    button, .calltoaction .button {
+        transform: none;
+        box-shadow: none;
+    }
+
     button:hover, .calltoaction .button:hover {
         transform: none;
-        background-color: #333;
+        background-color: white;
+        color: #333;
+    }
+
+    .box {
+        transform: none;
+        box-shadow: none;
     }
 
     .box:hover {
@@ -440,7 +545,37 @@ nav li.active {
         border: 1px solid #eaeaea;
     }
 
+    .project img {
+        transform: none;
+        box-shadow: none;
+    }
+
     .project img:hover {
-        transform: none; /* Remove scaling */
+        transform: none;
+        box-shadow: none;
+    }
+
+    .project_content > div {
+        opacity: 1; 
+        transform: none; 
+        transition: none; 
+    }
+
+    nav ul li a {
+        background-color: transparent;
+        color: #333;
+    }
+
+    nav ul li a:hover {
+        background-color: transparent; 
+        color: #333;
+    }
+    .skip a {
+        top: auto;
+        transition: none; 
+    }
+
+    .skip a:focus {
+        top: auto;
     }
 }

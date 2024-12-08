@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/html5reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>USASpending UXR</title>
   </head>
@@ -13,16 +17,191 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="group_study.html">Group Study UXR</a></li>
-          <li class="active"><a href="usaspending.html">USASpending UXR</a></li>
+          <li class="active"><a href="my_work.html">My Work</a></li>
+          <li><a href="about_me.html">About Me</a></li>
         </ul>
       </nav>
     </header>
-    <main id="main">
-      <h1>Foundational Research to Improve Federal Spending Transparency</h1>
-      <div class="overview">
-        <p></p>
+    <main id="main" class="container project_page">
+      <div class="project_overview">
+        <h1>Foundational Research to Improve Federal Spending Transparency</h1>
+        <div class="project_facts_summary">
+          <div>
+            <p class="overview_small_title">Length</p>
+            <p>Sept. 2022 - May 2023</p>
+          </div>
+          <div>
+            <p class="overview_small_title">Tools</p>
+            <p>Zoom, Miro, Excel</p>
+          </div>
+          <div>
+            <p class="overview_small_title">My Role</p>
+            <p>UX Researcher</p>
+          </div>
+        </div>
+        <img src="img/usaspending-cover.png" alt="Dollar bills on a laptop" />
+      </div>
+
+      <div class="project_content">
+        <div>
+          <p class="subtitle">Challenge</p>
+          <h2>Who are the users?</h2>
+          <p>
+            As the official source of government spending data,
+            <a href="http://usaspending.gov/">USAspending</a> is supposed to
+            promote federal spending transparency by reaching as various types
+            of US citizens as possible. However, the current use cases are
+            mostly limited to specific groups of specialists, such as government
+            employees and academic researchers.
+          </p>
+          <p>
+            To better promote federal spending transparency, I conducted a
+            foundational research to understand who are the missed user groups
+            and their needs. The research insights helped the design team to
+            identify key design concepts for different user groups and to
+            establish a prioritized roadmap.
+          </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Protocol</p>
+          <h2>In-depth Interview</h2>
+          <p>
+            The research is designed to identify user groups and understand why
+            USAspending.gov may not be effectively serving several groups. I
+            planned a series of interviews using a semi-structured approach,
+            which included in-depth interviews and usability testing sessions.
+          </p>
+          <p>
+            I first asked a set of questions to understand motivations and
+            reasons why users find federal spending data relevant and of
+            interest. Then I directed the participants to use USAspending.gov to
+            look for the information of interest to assess how USAspending.gov
+            performed in meeting users' needs and expectations.
+          </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Analysis</p>
+          <h2>Generating Personas</h2>
+          <p>
+            In the analysis process, I paid specific attention to the goals to
+            contextualize participants’ pain points and attitudes toward the
+            website. Based on the similarity of goals across participants, I
+            formalized four personas.
+          </p>
+          <ul>
+            <li>
+              The <b>Learner</b> wants to satisfy personal curiosity about
+              federal spending.
+            </li>
+            <li>
+              The <b>Researcher</b> wants to produce written reports using
+              information on USAspending.gov.
+            </li>
+            <li>
+              The <b>Opportunity Seeker</b> wants to help themselves or others
+              obtain federal award opportunities.
+            </li>
+            <li>
+              The <b>Agency Fact Checker</b> wants to comply with government
+              reporting mandates.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project_content_two_columns">
+          <img src="img/Learner.png" alt="Learner Persona" />
+          <img src="img/Researcher.png" alt="Researcher Persona" />
+          <img
+            src="img/Agency+Fact+Checker.png"
+            alt="Persona of the Agency Fact Checkers"
+          />
+          <img
+            src="img/Opportunity+Seeker.png"
+            alt="Persona of the Opportunity Seekers"
+          />
+        </div>
+
+        <div>
+          <p class="subtitle">Insights</p>
+          <h2>The Interdisciplinary Nature of Users</h2>
+          <p>
+            The goal of a user on USAspneding.gov varies as the context varies,
+            instead of being set in stone. For example, professors use the
+            website as academic researchers for their own research projects,
+            while they become learners when they facilitate students to learn
+            about federal spending data in introductory classes.
+          </p>
+          <p>
+            With the interdisciplinary nature of users in mind, I helped the
+            design team to shift their mindset from designing for occupations to
+            designing for goals, which would promote the flexibility and
+            inclusiveness of the website design.
+          </p>
+        </div>
+
+        <div>
+          <h2>Relatable-ness: Does the information matter to users?</h2>
+          <p>
+            We find that the group with the least use frequency are the
+            learners. Why? That’s because they are unable to find the
+            information that matters to them. Learners are not the president:
+            they care more about spendings relatable to them instead of data of
+            the whole federal government across different departments. What the
+            learners look for are usually spending data that geographically
+            related to their daily life or to their personal connections.
+          </p>
+          <p>
+            As we identified the learners as the biggest missed opportunity for
+            the website, I assisted the design team to prioritize re-designing
+            for learners to help them find their relatable information more
+            efficiently and with less barriers.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-navigation">
+        <a href="group_study.html" class="nav-button prev-button"
+          >← Previous Project</a
+        >
+        <a href="atlas.html" class="nav-button next-button">Next Project →</a>
       </div>
     </main>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".project_content > div");
+
+        const observerOptions = {
+          root: null,
+          threshold: 0.1,
+        };
+
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("appear");
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
   </body>
+  <footer>
+    <p>&copy; 2024 Terry Yuan. All rights reserved.</p>
+  </footer>
 </html>

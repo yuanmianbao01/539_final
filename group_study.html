@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/html5reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Group Study UXR</title>
   </head>
@@ -13,19 +17,161 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="group_study.html">Group Study UXR</a></li>
-          <li><a href="usaspending.html">USASpending UXR</a></li>
+          <li class="active"><a href="my_work.html">My Work</a></li>
+          <li><a href="about_me.html">About Me</a></li>
         </ul>
       </nav>
     </header>
-    <main id="main">
-      <h1>
-        Optimizing Group Study Mode: Driving User Acquisition and Retention in
-        EdTech
-      </h1>
-      <div class="overview">
-        <p></p>
+    <main id="main" class="container project_page">
+      <div class="project_overview">
+        <h1>
+          Optimizing Group Study Mode: Driving User Acquisition and Retention in
+          EdTech
+        </h1>
+        <div class="project_facts_summary">
+          <div>
+            <p class="overview_small_title">Length</p>
+            <p>Mar. 2024 - May 2024</p>
+          </div>
+          <div>
+            <p class="overview_small_title">Tools</p>
+            <p>Dovetail, Zoom, Miro</p>
+          </div>
+          <div>
+            <p class="overview_small_title">My Role</p>
+            <p>UX Researcher</p>
+          </div>
+        </div>
+        <img src="img/thumbnail.png" alt="Problem Roulette logo" />
+      </div>
+
+      <div class="project_content">
+        <div>
+          <p class="subtitle">Challenge</p>
+          <h2>Why aren’t students using the Group Study Mode?</h2>
+          <p>
+            On Problem Roulette, students can practice exam questions either
+            individually or in a group. However, the usage rate of the Group
+            Study Mode is significantly lower than that of the Individual Mode.
+            To improve the feature’s usage rate, the team aims to understand the
+            reasons behind the low usage of the Group Study Mode and identify
+            what is missing.
+          </p>
+          <p>After communicating with the stakeholders, I identified the following research questions: 
+            <ul>
+              <li>What are some common Group Study Mode use settings? How do group members study together? </li>
+              <li>What is the role of Group Study Mode in these settings? </li>
+              <li>What are the unmet needs? What are the future opportunities? </li>
+            </ul>
+          </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Method</p>
+          <h2>In-depth Interview & Ethnographic Observation</h2>
+          <p>Although the Group Study Mode was launched years ago, the team is still unclear about students’ needs for studying in groups. Therefore, I proposed an exploratory approach to answer the team’s questions. Inspired by the <b>Jobs to be Done framework</b>, I interviewed 6 students who had relatively higher feature engagement.  </p>
+          <p>While interviews can capture users’ attitudes and mental models, the actual interactions among students in a group are missing. To further capture study group dynamics and interactions, I conducted participant observation in a peer-led study group. </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Analysis</p>
+          <h2>Analyzing the Challenges and Current Solutions </h2>
+          <p>Through an inductive, thematic analysis, I identified the key stages of studying as a group. For each stage I discovered: </p>
+          <ul>
+            <li>the students’ goals (JTBD) for each stage </li>
+            <li>current solutions </li>
+            <li>Gaps in needs</li>
+          </ul>
+          <p>
+            By comparing their goals with the current available solutions, I identified students’ unmet needs and therefore future opportunities for Problem Roulette.
+          </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Insights</p>
+          <h2>Students found the feature helpful when studying in groups… </h2>
+          <p>To the team’s surprise, participants valued the Group Study Mode feature. They loved that the feature facilitated the group study dynamics by </p>
+          <ul>
+            <li>Ensuring time for individual work on each question</li>
+            <li>Facilitating discussion about the solution</li>
+            <li>Encouraging the same study pace among the group </li>
+          </ul>
+          <p>This insight reaffirms the value of the feature for the team and their mind to develop more on the feature. </p>
+        </div>
+
+        <div>
+          <h2>…but there are future opportunities for user acquisition and retention </h2>
+          <p>To boost usage rates, it's essential to enhance the experience for existing users while also attracting new ones. My findings helped the team focus on both user acquisition and retention simultaneously. </p>
+        </div>
+
+        <div class="project_content_two_columns">
+          <p class="subtitle">Findings about User Acquisition</p>
+          <div>
+            <h3>Students need help with group formation within their classes</h3>
+            <p>Only those who took classes with friends used the feature</p>
+            <p>Participants took the same class with their friends, so they could group together for studying. But what if a student doesn’t know anyone on the class? </p>
+            <p>Opportunity: Facilitate group formation with classmates to increase the usage of Group Study Mode </p>
+          </div>
+
+          <div>
+            <h3>Study facilitators of the existing peer-led study programs need resources to streamline group study facilitation </h3>
+            <p>From my ethnographic observation, I found that the existing study programs shared similar procedure as the group study feature, and the program facilitators can streamline the group facilitation by using the feature. </p>
+            <p>- Opportunity: Collaborate with the existing study programs and promote the Group Study Mode feature</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="subtitle">Findings about User Retention</p>
+          <h3>Students wanted to work on as many new questions as possible</h3>
+          <p>This was because they wanted to discover the unfamiliar areas to review before an exam</p>
+          <p>However, every time the students took a break after studying for a while, they had to restart a session and go through the questions they’ve solved again before working on new questions.  </p>
+          <p>Opportunity: Adding a “Resume” feature; Optimizing the algorithm for “the next question” to align with students’ mental model. </p>
+        </div>
+
+        <div>
+          <p class="subtitle">Stakeholder Communication</p>
+          <h2>Facilitating Stakeholder Decision Making </h2>
+          <p>When sharing insights, I adopted an workshop-like approach to both present findings and facilitate decision making among stakeholders. I strategically divided findings into several digestible parts. After presenting one part, I facilitated discussion and brainstorming among stakeholders around that part of findings, which assisted stakeholders to not only understand the findings and but also have a clear sense of corresponding next steps. In this way, I helped my stakeholders bridge the gaps between insights and actionable next steps. </p>
+        </div>
+        
+        <div class="project-navigation">
+          <a href="atlassian.html" class="nav-button prev-button">← Previous Project</a>
+          <a href="usaspending.html" class="nav-button next-button">Next Project →</a>
+        </div>
       </div>
     </main>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".project_content > div");
+
+    const observerOptions = {
+      root: null, 
+      threshold: 0.1, 
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("appear"); 
+          observer.unobserve(entry.target); 
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach((section) => {
+      observer.observe(section); 
+    });
+  });
+    </script>
   </body>
+  <footer>
+    <p>&copy; 2024 Terry Yuan. All rights reserved.</p>
+  </footer>
 </html>

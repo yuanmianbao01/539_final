@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Atlas UXR</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="my_work.html">My Work</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="container project_page">
+      <div class="project_overview">
+        <h1>Better Usability for Atlas' Planner</h1>
+        <img src="img/atlas.png" alt="Atlas Logo" />
+      </div>
+
+      <div class="project_content">
+        <div>
+          <p>
+            <b>Atlas</b> is a powerful academic planning tool developed by the
+            University of Michigan to help students explore courses, plan their
+            schedules, and make informed decisions about their academic paths.
+            While I contributed to a project that leveraged UX research to
+            improve Atlas's usability and functionality, due to a non-disclosure
+            agreement (NDA), I am unable to share specific details publicly.
+            However, I would be happy to discuss my role and insights
+            further—feel free to email me at
+            <a href="mailto:yuansq@umich.edu">yuansq@umich.edu</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-navigation">
+        <a href="usaspending.html" class="nav-button prev-button"
+          >← Previous Project</a
+        >
+      </div>
+    </main>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".project_content > div");
+
+        const observerOptions = {
+          root: null,
+          threshold: 0.1,
+        };
+
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("appear");
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Terry Yuan. All rights reserved.</p>
+  </footer>
+</html>
